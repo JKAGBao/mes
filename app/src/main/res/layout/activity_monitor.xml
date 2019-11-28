@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #818181"
+    >
+    <LinearLayout
+        android:background="@color/colorBackground"
+        android:id="@+id/ll_monitor"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:paddingTop="12dp"
+            android:id="@+id/tv_nfctext"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="手机贴近NFC卡获取设备在线监测数据"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_nfctext"
+            android:src="@drawable/nfc_run"/>
+    </LinearLayout>
+    <WebView
+        android:visibility="gone"
+        android:background=" #818181"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview"></WebView>
+ <!--
+ <ImageView
+    android:src="@drawable/item"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" />
+
+-->
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <com.yxst.mes.view.Topbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:rightText="停机"
+        custom:rightTextColor="@color/colorWhite"
+        custom:rightTextSize="7sp"
+        custom:leftTextSize="9sp"
+        custom:leftTextColor="@color/colorWhite"
+        /> >
+    <TextView
+        android:id="@+id/tv_nfc_pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_nfc_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+ <!--
+ <ImageView
+    android:src="@drawable/item"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" />
+
+-->
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="external_files"
+        path="."/>
+    <paths>
+        <external-path
+            name="camera_photos"
+            path="Android/data/com.yxst.mes/files/MesImages"
+         />
+           <!--相机图片保存图片路径，属于APP的存储空间-->
+    </paths>
+</paths>
+

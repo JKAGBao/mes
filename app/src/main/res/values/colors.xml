@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--图片轮播指示点颜色 -->
+    <color name="colorWhite">#fff</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+    <color name="grey">#EDEDED</color><!--红色 -->
+    <color name="wgrey">#d9d6c3</color><!--红色 -->
+</resources>

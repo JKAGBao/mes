@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">智能巡检平台</string>
+    <string name="title_home">设备</string>
+    <string name="title_dashboard">巡检</string>
+    <string name="title_notifications">通知</string>
+    <string name="update_title">检测到新版本</string>
+    <string name="updatecontent">1、检测到新版本\n2、优化界面</string>
+</resources>

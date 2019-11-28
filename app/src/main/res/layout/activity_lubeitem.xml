@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_lube"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/tv_nfc_pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_lubeItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+ <!--
+ <ImageView
+    android:src="@drawable/item"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" />
+
+-->
+</LinearLayout>
