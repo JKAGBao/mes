@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_height="wrap_content"
     android:layout_width="match_parent">
-    <com.yxst.mes.view.Topbar
+    <com.yxst.inspect.view.Topbar
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -27,6 +27,11 @@
         android:id="@+id/lv_nfc_place"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_nfc_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
  <!--
  <ImageView
     android:src="@drawable/item"

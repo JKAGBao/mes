@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ll_add"
-    android:background="@color/white"
+    android:background="@drawable/primary_border"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
@@ -155,7 +155,7 @@
                     android:orientation="horizontal"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="3dp"
                     android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"

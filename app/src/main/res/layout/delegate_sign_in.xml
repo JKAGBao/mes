@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,17 +38,18 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="18dp"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/ic_launcher" />
 
             <!--邮箱-->
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
+                android:textColorHint="@color/colorPrimary"
                 android:layout_marginTop="1dp">
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/edit_sign_in_email"
+                    android:id="@+id/edit_sign_in_account"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="账号"
@@ -59,6 +61,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp">
 
@@ -77,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/border"
                 android:gravity="center"
                 android:text="登录"
                 android:textColor="@android:color/white"

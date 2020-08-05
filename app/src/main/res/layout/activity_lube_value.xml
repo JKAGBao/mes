@@ -63,7 +63,7 @@
         android:layout_height="165dp"
         android:paddingLeft="1dp"
         android:paddingBottom="2dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/grey"
         android:horizontalSpacing="0dp"
         android:verticalSpacing="0dp"
         android:numColumns="4"
@@ -81,7 +81,7 @@
             android:padding="15dp"
             android:text="保  存"
             android:textSize="20sp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:background="@drawable/luceborder"
             />
 </LinearLayout>

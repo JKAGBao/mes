@@ -53,6 +53,7 @@
         <activity android:name="com.yxst.inspect.activity.ItemActivity"></activity>
         <activity android:name="com.yxst.inspect.activity.InspectPlaceActivity"></activity>
         <activity android:name="com.yxst.inspect.activity.SettingActivity"></activity>
+        <activity android:name="com.yxst.inspect.activity.SignInActivity" />
         <activity android:name="com.yxst.inspect.activity.UserInfoActivity"></activity>
         <activity android:name="com.yxst.inspect.activity.ReadMeterActivity"></activity>
         <activity android:name="com.yxst.inspect.activity.ScheduleActivity"></activity>
@@ -83,7 +84,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.yxst.inspect.activity.UndetectActivity" />
-        <activity android:name="com.yxst.inspect.activity.SignInActivity" />
         <activity android:name="com.yxst.inspect.activity.LubeActivity" />
         <activity android:name="com.yxst.inspect.activity.UnLubeActivity" />
         <activity android:name="com.yxst.inspect.activity.LubeItemActivity" />

@@ -13,9 +13,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="65sp"
-        android:layout_height="65sp"
-        android:src="@drawable/line96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lines48"
         android:layout_gravity="center_vertical"
          />
     <LinearLayout

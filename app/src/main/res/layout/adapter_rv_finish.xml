@@ -25,16 +25,15 @@
     </LinearLayout>
     <LinearLayout
         android:id="@+id/ll_visibile"
+        android:background="@drawable/primary_border"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv_wait_title"
             android:layout_width="wrap_content"
@@ -52,7 +51,7 @@
             android:layout_weight="0.5"
             android:gravity="center"
             android:text="0"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp" />
         <TextView
             android:layout_width="wrap_content"
@@ -60,7 +59,7 @@
             android:layout_weight="0.5"
             android:gravity="center"
             android:text="/"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp" />
         <TextView
             android:id="@+id/tv_progress1"
@@ -70,7 +69,7 @@
             android:gravity="center"
             android:layout_marginRight="16dp"
             android:text="0"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp" />
         <TextView
             android:id="@+id/tv_status"

@@ -6,7 +6,7 @@
     android:background="@color/grey"
     android:layout_height="wrap_content"
     android:layout_width="match_parent">
-    <com.yxst.mes.view.Topbar
+    <com.yxst.inspect.view.Topbar
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"

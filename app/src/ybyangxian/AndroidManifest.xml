@@ -40,7 +40,7 @@
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            <!--    <category android:name="android.intent.category.HOME" /> -->
+                <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -55,6 +55,7 @@
         <activity android:name="com.yxst.inspect.activity.SettingActivity"></activity>
         <activity android:name="com.yxst.inspect.activity.UserInfoActivity"></activity>
         <activity android:name="com.yxst.inspect.activity.ReadMeterActivity"></activity>
+        <activity android:name="com.yxst.inspect.activity.SignInActivity" />
         <activity android:name="com.yxst.inspect.activity.ScheduleActivity"></activity>
         <activity android:name="com.yxst.inspect.nfc.PlaceActivity" android:launchMode="singleTop"></activity>
         <activity android:name="com.yxst.inspect.nfc.NFCBindActivity" android:launchMode="singleTop"></activity>
