@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <project.bridgetek.com.bridgelib.MyControl.DeployableRegularTextView
+            android:id="@+id/tv_point_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="210dp"
+            android:text="@string/delegate_exception_tv_point_text"
+            android:textColor="@color/work_title"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@mipmap/ic_updatetime" />
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/delegate_excption_update_text"
+            android:textColor="@color/percentage"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_acceleration"
+            android:minHeight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="130dp"
+            android:text="加速度：2.0m/s"
+            android:textColor="@color/percentage"
+            android:textSize="13sp" />
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_speed"
+            android:minHeight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:maxWidth="120dp"
+            android:text="速度：3.5mm/s"
+            android:textColor="@color/percentage"
+            android:textSize="13sp" />
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_temperature"
+            android:minHeight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="温度：37℃"
+            android:textColor="@color/percentage"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</LinearLayout>

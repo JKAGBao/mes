@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">BridgeLib</string>
+    <string name="app_bridgelib_tv_inspect_text">智能巡点检</string>
+    <string name="bridgelib_toos_delete_success_text">删除单个文件</string>
+    <string name="bridgelib_toos_delete_yes_text">成功！</string>
+    <string name="bridgelib_toos_delete_no_text">失败！</string>
+    <string name="bridgelib_toos_delete_nonentity_text">不存在！</string>
+    <string name="my_listview_tv_load_text">正在加载...</string>
+    <string name="my_listview_load_text">下拉刷新...</string>
+    <string name="my_listview_pulload_text">松开刷新...</string>
+    <string name="my_listview_loadnow_text">正在刷新...</string>
+</resources>

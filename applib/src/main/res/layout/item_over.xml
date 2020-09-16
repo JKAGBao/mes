@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_workname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/task_upcoming_tv_workname_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_percent_text"
+                    android:textColor="@color/percentage"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_time" />
+
+                <TextView
+                    android:textColor="@color/percentage"
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_time_text" />
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_complete_time" />
+
+                <TextView
+                    android:textColor="@color/percentage"
+                    android:id="@+id/tv_overtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_time_text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/tv_preservation"
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_refer_min" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

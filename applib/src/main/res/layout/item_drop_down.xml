@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    android:id="@+id/ll_count"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+        android:id="@+id/tv_drop_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text=""
+        android:textColor="@color/work_title"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE" />
+</LinearLayout>

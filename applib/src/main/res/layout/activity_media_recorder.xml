@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/work_title"
+    tools:context="project.bridgetek.com.applib.main.activity.MediaRecorderActivity">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp" />
+
+
+    <Button
+        android:id="@+id/btnStartStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/theme"
+        android:includeFontPadding="false"
+        android:text="@string/upcom_measure_bt_retest_text"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnPlayVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/btnStartStop"
+        android:background="@color/theme"
+        android:includeFontPadding="false"
+        android:text="@string/upcom_media_recorder_btn_playvideo_text"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/bt_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/text"
+        android:background="@color/theme"
+        android:includeFontPadding="false"
+        android:text="@string/upcom_mediarecorder_bt_complete_text"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:includeFontPadding="false"
+        android:text="10"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>

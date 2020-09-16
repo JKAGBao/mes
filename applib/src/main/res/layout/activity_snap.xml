@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.bridgetek.com.applib.main.activity.SnapActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_inspect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="自主点检下载"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/theme"
+        android:id="@+id/bt_scaveng"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@color/theme"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/snap_refer_bt_text"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

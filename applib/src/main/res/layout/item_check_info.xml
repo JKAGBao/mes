@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/upback"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_open"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/ic_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_check_open"
+                android:gravity="center" />
+
+            <TextView
+                android:maxEms="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/LabelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:includeFontPadding="false"
+                android:text="@string/check_label_tv_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/compLete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:includeFontPadding="false"
+                android:text="@string/task_upcoming_tv_percent_text"
+                android:textColor="@color/percentage"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@mipmap/btn_up_arrow_yellow_normal"
+                    android:id="@+id/ic_shang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp" />
+
+                <ImageView
+                    android:background="@mipmap/btn_down_arrow_yellow_normal"
+                    android:id="@+id/ic_xia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/upback">
+
+            <project.bridgetek.com.bridgelib.MyControl.DG_ListView
+                android:id="@+id/lv0MobjectName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="12dp"></project.bridgetek.com.bridgelib.MyControl.DG_ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

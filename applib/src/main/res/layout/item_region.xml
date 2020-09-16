@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/LabelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_workname_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_over"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_round_red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_start" />
+
+                <TextView
+                    android:id="@+id/startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_time_text"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_end" />
+
+                <TextView
+                    android:id="@+id/overTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_time_text"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:background="@mipmap/ic_complete_project" />
+
+                <TextView
+                    android:id="@+id/compLete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_percent_text"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_corner" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

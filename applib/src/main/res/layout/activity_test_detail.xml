@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.activity.TestDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/test_detail_line_name_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_Mobjectinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/upcom_abnormal_tv_mobject_info_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/excdelegate_fragment_adapter_tv_inspect_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_temporary_tv_signal_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_signal_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_temporary_rb_output_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_temporary_tv_direction_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_direction_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_temporary_rb_level_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_detail_tv_time_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/task_upcoming_tv_time_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_history_adapter_tv_remark_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_remarks_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/excdelegate_fragment_adapter_tv_inspect_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_acceleration"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_acceleration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_acceleratiom_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_acceleration_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_acceleration_value_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_acceleration_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_vibra_tv_acceleration_text"
+                    android:textColor="@color/percentage"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/bt_acceleration_photo"
+                android:layout_width="74dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:background="@color/select_bt_normal"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_measure_bt_speed_text"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_speed"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_speed_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_speed_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_speed_value_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_speed_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_speed_text_text"
+                    android:textColor="@color/percentage"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/bt_speed_photo"
+                android:layout_width="74dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:background="@color/select_bt_normal"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_measure_bt_speed_text"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_temperatrue"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_temperature_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_tempratrue_value_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_temperature_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_vibra_tv_temperatrue_text"
+                    android:textColor="@color/percentage"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/bt_temperature_photo"
+                android:layout_width="74dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:background="@color/select_bt_normal"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_measure_bt_temperature_text"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

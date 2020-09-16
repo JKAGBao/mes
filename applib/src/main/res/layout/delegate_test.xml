@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_vibration"
+        android:layout_width="300dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/shape_vibration_corner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="104dp"
+            android:background="@drawable/btn_vibration" />
+
+        <TextView
+            android:id="@+id/tv_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/test_vibration_line_name_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_imaging"
+        android:layout_width="300dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/shape_imaging_corner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="104dp"
+            android:background="@drawable/btn_thermal_imaging" />
+
+        <TextView
+            android:id="@+id/tv_imaging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/testdelegate_fragment_tv_imaging_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_history"
+        android:layout_width="300dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/shape_history_corner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="104dp"
+            android:background="@drawable/btn_historical_data" />
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/testdelegate_fragment_tv_history_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

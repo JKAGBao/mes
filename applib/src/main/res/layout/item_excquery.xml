@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_User"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_frament_adapter_tv_user_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:includeFontPadding="false"
+                android:text="处理异常"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:id="@+id/img_refer"
+                android:layout_width="64dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/excdelegate_dapter_line">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_name" />
+
+            <TextView
+                android:id="@+id/tv_inspect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_fragment_adapter_tv_inspect_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/refresh_time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_fragment_adapter_tv_time_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_status" />
+
+            <TextView
+                android:id="@+id/tv_MObjectStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_frament_adapter_tv_mobject_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_remarks" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_fragment_adapter_tv_message_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

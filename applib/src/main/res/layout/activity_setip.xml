@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_tv_setup_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/setServerIP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/setup_setserver_tv_ip_text"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:text="121.196.220.45:8096"
+        android:textColorHint="#95A1AA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </View>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/corners_bg"
+            android:text="@string/test_temporary_bt_preservation_text" />
+
+        <Button
+            android:id="@+id/bt_skip"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/corners_bg"
+            android:text="@string/login_bt_skip_text" />
+    </LinearLayout>
+</LinearLayout>
+
+
+

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.activity.AbnormalActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/upcom_abnormal_tv_title_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/upback"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_equipment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_abnormal_tv_equipment_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_inspect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_abnormal_tv_inspect_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingTop="15dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="15dp">
+
+                <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abnormal_tv_result_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:drawableRight="@drawable/btn_down_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/abnormal_tv_result_hint"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/percentage"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <project.bridgetek.com.applib.main.toos.DropListView
+                android:id="@+id/lv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:visibility="gone">
+
+            </project.bridgetek.com.applib.main.toos.DropListView>
+
+            <LinearLayout
+                android:id="@+id/ll_noresult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingTop="15dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="15dp">
+
+                <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abnormal_tv_result_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:background="@null"
+                    android:id="@+id/et_result"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/abnormal_et_result_hint"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/percentage"
+                    android:textSize="16sp" />
+
+                <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abnormal_spinner_simple_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:layout_marginLeft="16dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:id="@+id/spinner_simple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_depict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_abnormal_tv_depict_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_abnormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/et_border"
+                    android:gravity="start"
+                    android:hint="@string/upcom_abnormal_et_abnormal_hint"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/work_title"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/upback"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_Mobjectinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_abnormal_tv_mobject_info_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tv_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/upcom_abnormal_tv_device_hint"
+                    android:imeOptions="actionDone"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/meter_hint_tv"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_devices"
+                    android:layout_width="46dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_abnormal_tv_devices_text"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_abnormal_tv_abnormal_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_ExceptionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:hint="@string/upcom_abnormal_et_exception_title_hint"
+                    android:includeFontPadding="false"
+                    android:textColorHint="@color/meter_hint_tv"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/depict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_abnormal_tv_depict_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_devices"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/et_border"
+                    android:gravity="start"
+                    android:hint="@string/upcom_abnormal_et_abnormal_hint"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="6dp"
+                    android:textColorHint="@color/meter_hint_tv"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/upback"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_cont"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="46dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_abnormal_tv_cancel_text"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_clear"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/ic_clean" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/bt_preservation"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/theme"
+                android:text="@string/over_undete_btcomplete_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

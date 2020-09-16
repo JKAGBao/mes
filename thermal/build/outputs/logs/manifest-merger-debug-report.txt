@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:2:1-42:12
+	package
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:4:5-49
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:13:9-34
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:12:9-32
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:6:5-40:19
+	android:label
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:9:9-41
+	android:versionName
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:13:9-34
+	android:versionCode
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:12:9-32
+	android:largeHeap
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:10:9-33
+	android:icon
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:8:9-43
+	android:allowBackup
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:11:9-40
+activity#com.flir.flironeexampleapplication.EditorActivity
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:14:9-27:20
+	android:screenOrientation
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:16:13-49
+	android:name
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:15:13-43
+intent-filter#action:name:android.intent.action.EDIT+action:name:android.intent.action.PICK+action:name:android.intent.action.SEND+action:name:android.intent.action.VIEW+data:mimeType:image/jpeg
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:17:13-26:29
+	tools:ignore
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:17:28-58
+action#android.intent.action.VIEW
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:18:25-66
+action#android.intent.action.EDIT
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:19:25-66
+action#android.intent.action.PICK
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:20:25-66
+action#android.intent.action.SEND
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:21:25-66
+data
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:25:17-55
+	android:mimeType
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:25:23-52
+activity#com.flir.flironeexampleapplication.GLPreviewActivity
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:28:9-39:20
+	android:screenOrientation
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:34:13-49
+	android:process
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:33:13-42
+	android:label
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:31:13-45
+	android:launchMode
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:32:13-44
+	android:configChanges
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:30:13-74
+	android:theme
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:35:13-44
+	android:name
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:29:13-46
+meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:36:13-38:57
+	android:resource
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:38:17-54
+	android:name
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml:37:17-79
+uses-sdk
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+		ADDED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidStudioProjects\MES\thermal\src\main\AndroidManifest.xml

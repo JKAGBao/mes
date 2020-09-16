@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/workname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/task_upcoming_tv_workname_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_time" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_time_text"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_check_item" />
+
+                <TextView
+                    android:id="@+id/baifenbi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/task_upcoming_tv_percent_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_over"
+                android:layout_width="46dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:background="@color/navy"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/task_upcoming_tv_refer_text"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/btn_common_right_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:alpha="0.7"
+            android:id="@+id/img_spot"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/ic_patrol"
+            android:layout_width="64dp"
+            android:layout_height="52dp" />
+    </FrameLayout>
+</RelativeLayout>

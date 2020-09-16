@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.activity.OverActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_back"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/task_upcoming_tv_workname_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/upback"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_taskName"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingLeft="12dp"
+            android:text="@string/over_undete_tvtaskname_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_total" />
+
+                <TextView
+                    android:id="@+id/tv_checkSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/over_undete_tvnumber_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="34dp">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_number_abnor" />
+
+                <TextView
+                    android:id="@+id/tv_abnormalSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/over_undete_tvnumber_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="34dp">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_number_undete" />
+
+                <TextView
+                    android:id="@+id/tv_undeteSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/over_undete_tvnumber_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="34dp">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_not_upload" />
+
+                <TextView
+                    android:id="@+id/tv_notupload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/over_undete_tvnumber_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="12dp"-->
+        <!--android:paddingRight="12dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_rearson"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:includeFontPadding="false"-->
+        <!--android:text="@string/over_undete_tvrearson_text"-->
+        <!--android:textColor="@color/work_title"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<EditText-->
+        <!--android:layout_marginBottom="6dp"-->
+        <!--android:id="@+id/et_rearson"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--android:background="@drawable/et_border"-->
+        <!--android:gravity="start"-->
+        <!--android:hint="@string/over_undete_etrearson_hint"-->
+        <!--android:includeFontPadding="false"-->
+        <!--android:paddingLeft="3dp"-->
+        <!--android:paddingTop="6dp"-->
+        <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/bt_complete"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:layout_marginBottom="7dp"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:background="@color/theme"-->
+        <!--android:includeFontPadding="false"-->
+        <!--android:text="@string/over_undete_btcomplete_text"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="18sp" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            app:tabTextAppearance="@style/TextAppearance.Design.Tab.Custom"
+            android:id="@+id/tab_theme"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/white"></android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+</LinearLayout>

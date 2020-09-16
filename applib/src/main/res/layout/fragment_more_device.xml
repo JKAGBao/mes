@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.fragment.workbench.MoreDeviceFragment">
+
+    <LinearLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_back" />
+
+        <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/upcom_devices_line_name_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <project.bridgetek.com.bridgelib.MyControl.MediumTextView
+            android:id="@+id/tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_textview_device"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/more_device_tv_sort_text"
+            android:textColor="@color/title_name"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_connect"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/btn_search" />
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/more_device_et_search_text"
+            android:textColor="@color/percentage"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <project.bridgetek.com.bridgelib.MyControl.MediumTextView
+        android:id="@+id/tv_sollect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:text="@string/delegate_exception_sollect_text"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <project.bridgetek.com.bridgelib.MyControl.MyListView
+        android:id="@+id/lv_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/upback">
+
+    </project.bridgetek.com.bridgelib.MyControl.MyListView>
+</LinearLayout>

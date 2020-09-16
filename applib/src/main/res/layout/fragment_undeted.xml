@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    tools:context="project.bridgetek.com.applib.main.fragment.UndetectedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/lv_undeted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/img_load"
+        android:layout_width="263dp"
+        android:layout_height="162dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_leak" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upback"
+    android:paddingBottom="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/check_label_tv_text"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/remind_list_alarm_tv_unit_text"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_device_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/delegate_exception_tv_devicecode_text"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

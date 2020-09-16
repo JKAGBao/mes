@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="project.bridgetek.com.applib">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application>
+        <activity android:name=".main.activity.DeviceStateActivity"></activity>
+        <activity
+            android:name=".main.activity.AppActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.activity.CheckActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.activity.MediaRecorderActivity" />
+        <activity android:name=".main.activity.WatchActivity" />
+        <activity
+            android:name=".main.activity.AbnormalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.activity.MeterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".main.activity.MeasureActivity" />
+        <activity android:name=".main.activity.RegionActivity" />
+
+        <service android:name=".main.toos.BackGroup" />
+        <service android:name=".main.toos.UploadService" />
+
+        <activity android:name=".main.activity.OverActivity" />
+        <activity android:name=".main.activity.SnapActivity" />
+        <activity android:name=".main.activity.SetupActivity" />
+        <activity
+            android:name=".main.activity.DevicesActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".main.activity.MyActivity" />
+        <activity android:name=".main.activity.VideoShowActivity" />
+        <activity android:name=".main.activity.AbnorDetailsActivity" />
+        <activity android:name=".main.activity.VibraTionActivity" />
+        <activity android:name=".main.activity.ExcQueryActivity" />
+        <activity android:name=".main.activity.TemporaryActivity" />
+        <activity android:name=".main.activity.TestHistoryActivity" />
+        <activity android:name=".main.activity.TestDetailActivity" />
+        <activity android:name=".main.activity.ChartActivity" />
+        <activity android:name=".main.activity.NfcActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.activity.SetServerActivity" />
+        <activity android:name=".main.activity.AboutActivity" />
+        <activity android:name=".main.activity.BluetoothSetActivity" />
+        <activity android:name=".main.activity.VibraSettingActivity" />
+        <activity android:name=".main.activity.DetailsActivity" />
+        <activity android:name=".main.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.activity.workbench.StateActivity" />
+    </application>
+
+</manifest>

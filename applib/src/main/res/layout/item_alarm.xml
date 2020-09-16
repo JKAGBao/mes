@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/device_details_alarm_tv_message_text"
+            android:textColor="@color/work_title"
+            android:textSize="13sp" />
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/device_details_alarm_tv_noneed_text"
+            android:textColor="@color/upcom_frament_tv_inhand"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/ic_complete_time" />
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_happen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/device_details_alarm_tv_happen_text"
+            android:textColor="#929292"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:background="@color/test_history_shape"
+            android:gravity="center"
+            android:text="@string/device_details_alarm_tv_change_text"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.fragment.workbench.DeviceChoiceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_back" />
+
+        <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/upcom_devices_line_name_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <project.bridgetek.com.bridgelib.MyControl.MediumTextView
+            android:id="@+id/tv_device_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_textview_device"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/device_choice_tv_query_text"
+            android:textColor="@color/title_name"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/device_choice_tv_tips_text"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/cb_celect"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/checkbox_style"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:text="@string/device_choice_tv_celect_text"
+            android:textColor="@color/work_title"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@null">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_define"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:text="@string/test_temporary_bt_preservation_text"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

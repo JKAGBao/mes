@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/setup_bluetooth_line_name_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_count"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_sensor"
+            android:layout_width="18dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/ic_sensor" />
+
+        <TextView
+            android:id="@+id/tv_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:includeFontPadding="false"
+            android:text="@string/excdelegate_fragment_adapter_tv_inspect_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_signal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/ic_signal" />
+
+            <TextView
+                android:id="@+id/tv_signal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_measure_tv_signal_text"
+                android:textColor="@color/work_title"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/ic_electricity" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_measure_tv_quantity"
+                android:textColor="@color/work_title"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!--<Button-->
+        <!--android:id="@+id/bt_connect"-->
+        <!--android:layout_width="66dp"-->
+        <!--android:layout_height="26dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:background="@color/select_bt_normal"-->
+        <!--android:gravity="center"-->
+        <!--android:includeFontPadding="false"-->
+        <!--android:text="@string/setup_bluetooth_bt_connect_text"-->
+        <!--android:textColor="@color/white" />-->
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/work_title"
+        android:includeFontPadding="false"
+        android:id="@+id/tv_tips"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:text="@string/setup_bluetooth_tv_tips_text"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_taskName"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="12dp"
+        android:text="@string/setup_bluetooth_tv_taskname_text"
+        android:textColor="@color/work_title"
+        android:textSize="16sp" />
+
+
+    <ListView
+        android:id="@+id/lv_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/bt_scaveng"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:includeFontPadding="false"
+        android:text="@string/setup_bluetooth_bt_scaveng_text"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

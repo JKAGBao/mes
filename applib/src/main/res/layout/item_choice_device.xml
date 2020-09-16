@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="10dp">
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_device_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/check_label_tv_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_device"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/checkbox_style"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_device"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/btn_common_right_arrow" />
+
+        <project.bridgetek.com.bridgelib.MyControl.MediumTextView
+            android:id="@+id/tv_tree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/theme"
+            android:padding="6dp"
+            android:text="@string/device_list_tv_archive_text"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="10dp">
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/check_label_tv_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/upback" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_count"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:background="@color/backgroud_mobject">
+
+        <ImageView
+            android:id="@+id/img_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/ic_carry_out" />
+
+        <TextView
+            android:id="@+id/tvMobjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/task_upcoming_tv_workname_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_check_close" />
+
+        <TextView
+            android:id="@+id/tvOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/task_upcoming_tv_workname_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_resule"
+        android:layout_width="46dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/upcom_frament_tv_notstart"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/modify"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</LinearLayout>

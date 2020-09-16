@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <CheckBox
+                android:id="@+id/cb_signal"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/checkbox_style"
+                android:button="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+                android:id="@+id/tv_signal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/test_vibration_rb_signal2_text"
+                android:textColor="@color/work_title"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <project.bridgetek.com.bridgelib.MyControl.RegularTextView
+            android:id="@+id/tv_signal_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0.5"
+            android:textColor="@color/work_title"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/segmenting_line" />
+</LinearLayout>

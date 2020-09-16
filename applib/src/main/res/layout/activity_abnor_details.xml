@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.activity.AbnorDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_back"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/upcom_abnormal_tv_title_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/upback"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:minHeight="46dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_Mobjectinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_abnormal_tv_mobject_info_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:hint="@string/excdelegate_fragment_adapter_tv_inspect_text"
+                android:includeFontPadding="false"
+                android:textColor="@color/work_title"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:minHeight="46dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_Exception"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_abnormal_tv_abnormal_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_abnormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_fragment_adapter_tv_inspect_text"
+                android:textColor="@color/work_title"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:minHeight="46dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/depict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_abnormal_tv_depict_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_fragment_adapter_tv_inspect_text"
+                android:textColor="@color/work_title"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

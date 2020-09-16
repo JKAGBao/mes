@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.activity.SetupActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_back"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_line_name_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_synchro"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/ic_synchronize" />
+
+        <TextView
+            android:id="@+id/tv_synchro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_tv_synchro_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/ic_logout" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_tv_cancel_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/ic_sensor" />
+
+        <TextView
+            android:id="@+id/tv_fit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_tv_fit_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_write"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/ic_rfid" />
+
+        <TextView
+            android:id="@+id/tv_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_tv_write_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setup"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/ic_server" />
+
+        <TextView
+            android:id="@+id/tv_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_tv_setup_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_clear"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/ic_clear" />
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_tv_clear_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_renew"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/ic_renew" />
+
+        <TextView
+            android:id="@+id/tv_renew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:includeFontPadding="false"
+            android:text="检测更新"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/ic_about" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:includeFontPadding="false"
+            android:text="@string/setup_activity_tv_about_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

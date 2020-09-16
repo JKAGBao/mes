@@ -1,0 +1,361 @@
+<resources>
+    <string name="app_name">AppLib</string>
+    <string name="group_toast_task" translatable="false">获取线路接口出错</string>
+    <string name="group_toast_check" translatable="false">获取详细任务出错</string>
+    <string name="group_toast_contrast" translatable="false">获取人员线路出错</string>
+    <string name="login_tost_error" translatable="false">帐号错误</string>
+    <string name="login_account_bt_text" translatable="false">登录</string>
+    <string name="login_account_tv_workcard_text" translatable="false">【工牌】登录</string>
+    <string name="login_id_tv_number_text" translatable="false">帐号登录</string>
+    <string name="task_upcoming_tv_workname_text" translatable="false">热轧机械日常点检线路</string>
+    <string name="task_upcoming_tv_time_text" translatable="false">13：00-18：00</string>
+    <string name="task_upcoming_tv_percent_text" translatable="false">(0/100)</string>
+    <string name="task_upcoming_tv_refer_text" translatable="false">未开始</string>
+    <string name="regio_bt_text" translatable="false">扫描二维码</string>
+    <string name="check_label_tv_text" translatable="false">设备名称</string>
+    <string name="snap_toast_finish_text" translatable="false">临时任务已完成</string>
+    <string name="snap_refer_bt_text" translatable="false">批量提交</string>
+    <string name="snap_adapter_tvdesc_text" translatable="false">计划任务： 查看项目</string>
+    <string name="snap_adapter_tvests_text" translatable="false">判断标准:XXXX</string>
+    <string name="snap_adapter_tvmor_text" translatable="false">更多详情</string>
+    <string name="snap_adapter_tvstar_text" translatable="false">开始测量</string>
+    <string name="snap_adapter_btnormal_text" translatable="false">正常</string>
+    <string name="snap_adapter_btabnormal_text" translatable="false">异常</string>
+    <string name="upcom_watch_tvresult_text" translatable="false">上一周期结果：正常</string>
+    <string name="over_undete_tvtaskname_text" translatable="false">任务详情信息:XXXXXX</string>
+    <string name="over_undete_tvnumber_text" translatable="false">XXX</string>
+    <string name="over_undete_tvrearson_text" translatable="false">漏检原因:</string>
+    <string name="over_undete_etrearson_hint" translatable="false">输入漏检原因</string>
+    <string name="over_undete_btcomplete_text" translatable="false">保存</string>
+    <string name="upcom_check_tvsort_text" translatable="false">排序</string>
+    <string name="upcom_abnormal_tv_title_text" translatable="false">异常信息</string>
+    <string name="upcom_abnormal_toast_text" translatable="false">请选择设备</string>
+    <string name="upcom_abnormal_tv_equipment_text" translatable="false">加热陆风机房区域-设备XXXXXXXX</string>
+    <string name="upcom_abnormal_tv_inspect_text" translatable="false">检查项目：XXXXXXX</string>
+    <string name="upcom_abnormal_tv_depict_text" translatable="false">详细描述：</string>
+    <string name="upcom_abnormal_et_abnormal_hint" translatable="false">输入发生异常的详细信息</string>
+    <string name="upcom_abnormal_tv_mobject_info_text" translatable="false">设备信息：</string>
+    <string name="upcom_abnormal_tv_device_hint" translatable="false">请输入异常发生的设备信息</string>
+    <string name="upcom_abnormal_tv_devices_text" translatable="false">选择</string>
+    <string name="upcom_abnormal_tv_abnormal_text" translatable="false">异常标题：</string>
+    <string name="upcom_abnormal_et_exception_title_hint" translatable="false">设备信息+时间+用户自输入</string>
+    <string name="upcom_meter_tv_equipment_text" translatable="false">设备XXXXXX</string>
+    <string name="upcom_meter_tv_meter_text" translatable="false">抄表值：</string>
+    <string name="upcom_meter_et_meter_hint" translatable="false">输入仪表值</string>
+    <string name="upcom_meter_tv_standard" translatable="false">上限：XX</string>
+    <string name="upcom_meter_tv_parmlower_text" translatable="false">标准：XX</string>
+    <string name="upcom_meter_tv_parmupper_text" translatable="false">下限：XX</string>
+    <string name="upcom_meter_tv_remark_text" translatable="false">备注信息</string>
+    <string name="upcom_meter_et_remarks_hint" translatable="false">输入备注信息</string>
+    <string name="snap_frament_tv_preservation_text" translatable="false">未完成</string>
+    <string name="excdelegate_fragment_adapter_tv_message_text" translatable="false">出现异常信息</string>
+    <string name="excdelegate_frament_adapter_tv_mobject_text" translatable="false">等待处理</string>
+    <string name="excdelegate_fragment_adapter_tv_time_text" translatable="false">2018-10-18</string>
+    <string name="excdelegate_fragment_adapter_tv_inspect_text" translatable="false">XXXXXXXXXXXXX</string>
+    <string name="excdelegate_frament_adapter_tv_user_text" translatable="false">设备名称+时间+用户输入信息</string>
+    <string name="excdelegate_fragment_toast_fableft_text" translatable="false">当前无网络连接，无法同步</string>
+    <string name="excdelegate_fragment_toast_imgsearch_text" translatable="false">当前无网络连接，无法搜索</string>
+    <string name="excdelegate_devices_tv_mobjectcode_text" translatable="false">编码xxx</string>
+    <string name="excdelegate_devices_tv_location_text" translatable="false">西南一区</string>
+    <string name="testdelegate_fragment_tv_vibration_text" translatable="false">振动</string>
+    <string name="testdelegate_fragment_tv_imaging_text" translatable="false">热成像</string>
+    <string name="testdelegate_fragment_tv_history_text" translatable="false">临测历史</string>
+    <string name="upcom_measure_tv_notconnect_text" translatable="false">传感器未连接</string>
+    <string name="upcom_measure_tv_connect_text" translatable="false">点击连接</string>
+    <string name="upcom_measure_tv_signal_text" translatable="false">强</string>
+    <string name="upcom_measure_tv_quantity" translatable="false">72%</string>
+    <string name="upcom_measure_tv_speed_text" translatable="false">速度：</string>
+    <string name="upcom_measure_tv_speed_value_text" translatable="false">（XX）m/s</string>
+    <string name="upcom_measure_tv_speed_section_text" translatable="false">值1—值2</string>
+    <string name="upcom_measure_tv_speed_text_text" translatable="false">（有效值）</string>
+    <string name="upcom_measure_bt_speed_text" translatable="false">波形频谱图</string>
+    <string name="upcom_measure_tv_acceleratiom_text" translatable="false">加速度：</string>
+    <string name="upcom_measure_tv_acceleration_value_text" translatable="false">- - . - -</string>
+    <string name="upcom_measure_tv_lash_text" translatable="false">冲击：</string>
+    <string name="upcom_measure_tv_temperatrue" translatable="false">温度：</string>
+    <string name="upcom_measure_tv_tempratrue_value_text" translatable="false">（XX）ºC</string>
+    <string name="upcom_measure_bt_preservation_text" translatable="false">保存（测量中）</string>
+    <string name="upcom_measure_bt_retest_text" translatable="false">开始</string>
+    <string name="excdelegate_fragment_adapter_holder_one_text" translatable="false">误报并关闭</string>
+    <string name="excdelegate_fragment_adapter_holder_two_text" translatable="false">简单处理关闭</string>
+    <string name="excdelegate_fragment_adapter_holder_three_text" translatable="false">转检修</string>
+    <string name="excdelegate_fragment_adapter_holder_four_textfour" translatable="false">等待处理</string>
+    <string name="test_thermal_tv_name_text" translatable="false">临测-热红外成像</string>
+    <string name="test_thermal_tv_thermal_text" translatable="false">拍照</string>
+    <string name="test_vibration_tv_analyse_text" translatable="false">200HZ</string>
+    <string name="test_vibration_tv_sampling_text" translatable="false">256</string>
+    <string name="test_vibration_tv_signal_text_text" translatable="false">信号类型：</string>
+    <string name="test_vibration_rb_signal1_text" translatable="false">加速度</string>
+    <string name="test_vibration_rb_signal2_text" translatable="false">速度</string>
+    <string name="test_vibration_rb_signal3_text" translatable="false">温度</string>
+    <string name="test_vibration_tv_analyse_text_text" translatable="false">分析频率：</string>
+    <string name="test_vibration_rb_analyse1_text" translatable="false">200Hz</string>
+    <string name="test_vibration_rb_analyse2_text" translatable="false">500Hz</string>
+    <string name="test_vibration_rb_analyse3_text" translatable="false">2kHz</string>
+    <string name="test_vibration_rb_analyse4_text" translatable="false">5kHz</string>
+    <string name="test_vibration_rb_analyse5_text" translatable="false">1kHz</string>
+    <string name="test_vibration_tv_sampling_text_text" translatable="false">采样点数：</string>
+    <string name="test_vibration_rb_sampling1" translatable="false">256</string>
+    <string name="test_vibration_rb_sampling2_text" translatable="false">512</string>
+    <string name="test_vibration_rb_sampling3_text" translatable="false">1024</string>
+    <string name="test_vibration_rb_sampling4" translatable="false">2048</string>
+    <string name="app_context_tost_result_text" translatable="false">失败了</string>
+    <string name="upcom_measure_bt_temperature_text" translatable="false">热成像</string>
+    <string name="test_vibration_toast_connect_ok_text" translatable="false">连接成功</string>
+    <string name="test_vibration_toast_connect_no_text" translatable="false">失败了,重连中</string>
+    <string name="test_temporary_line_name_text" translatable="false">临测保存</string>
+    <string name="test_temporary_tv_mobjextinfo_text" translatable="false">设备：</string>
+    <string name="test_temporary_tv_device_text" translatable="false">输入所测量的设备信息</string>
+    <string name="test_temporary_tv_signal_text" translatable="false">点位：</string>
+    <string name="test_temporary_rb_input_text" translatable="false">输入轴</string>
+    <string name="test_temporary_rb_output_text" translatable="false">输出轴</string>
+    <string name="test_temporary_rb_other_text" translatable="false">其他</string>
+    <string name="test_temporary_tv_direction_text" translatable="false">方向：</string>
+    <string name="test_temporary_rb_level_text" translatable="false">水平</string>
+    <string name="test_temporary_rb_vertical_text" translatable="false">垂直</string>
+    <string name="test_temporary_rb_axial_text" translatable="false">轴向</string>
+    <string name="test_temporary_tv_remarks_text" translatable="false">备注：</string>
+    <string name="test_temporary_et_additional_text" translatable="false">附加信息输入</string>
+    <string name="test_temporary_bt_preservation_text" translatable="false">确定</string>
+    <string name="test_temporary_bt_retest_text" translatable="false">确定并转异常</string>
+    <string name="test_vibration_line_name_text" translatable="false">振动测量</string>
+    <string name="test_history_line_name_text" translatable="false">临测历史记录</string>
+    <string name="test_history_adapter_tv_vibration_text" translatable="false">振动测量</string>
+    <string name="test_history_adapter_tv_mobject_text" translatable="false">输入轴轴向</string>
+    <string name="test_history_adapter_tv_remark_text" translatable="false">备注信息：</string>
+    <string name="test_history_adapter_tv_abnormal_text" translatable="false">已转异常</string>
+    <string name="test_detail_tv_time_text" translatable="false">测量时间：</string>
+    <string name="test_detail_line_name_text" translatable="false">临测详情</string>
+    <string name="test_vibration_activity_start_text" translatable="false">停止</string>
+    <string name="test_vibration_activity_hold_text" translatable="false">测量中....</string>
+    <string name="mactivity_excdelegate_toast_connect_text" translatable="false">没有网络，请稍后重试</string>
+    <string name="upcom_abnormal_tv_cancel_text" translatable="false">取消</string>
+    <string name="upcom_mediarecorder_activity_toast_text" translatable="false">正在使用中，无法删除</string>
+    <string name="upcom_mediarecorder_activity_toast_playback_text" translatable="false">请先录制</string>
+    <string name="upcom_mediarecorder_activity_toast_camera_text" translatable="false">未能获取到相机！</string>
+    <string name="upcom_mediarecorder_bt_complete_text" translatable="false">完成</string>
+    <string name="upcom_media_recorder_btn_playvideo_text" translatable="false">回放/长按删除</string>
+    <string name="upcom_activity_tvrecovery_text" translatable="false">恢复上一次检查：</string>
+    <string name="upcom_abnormal_record_tv_time_text" translatable="false">最多 30 秒</string>
+    <string name="upcom_abnormal_record_toast_text" translatable="false">开始录音...</string>
+    <string name="app_login_tv_title_text" translatable="false">巡点检客户端</string>
+    <string name="app_login_etlogin_account_hint" translatable="false">请输入账号</string>
+    <string name="app_login_etlogin_psw_hint" translatable="false">请输入密码</string>
+    <string name="app_login_etlogin_id_hint" translatable="false">请扫描工牌</string>
+    <string name="app_login_set_sleep_text" translatable="false">正在登录.....</string>
+    <string name="app_login_toast_error_text" translatable="false">未知错误</string>
+    <string name="setup_my_line_name_text" translatable="false">我的信息</string>
+    <string name="setup_my_tv_username_text" translatable="false">用户名：</string>
+    <string name="setup_my_tv_badgeid_text" translatable="false">工号：</string>
+    <string name="setup_my_tv_groupname_text" translatable="false">部门：</string>
+    <string name="setup_my_tv_companyname_text" translatable="false">公司：</string>
+    <string name="setup_my_tv_electric_text" translatable="false">蓝牙设备电量低于20%</string>
+    <string name="setup_my_tv_time_text" translatable="false">0715:46:00</string>
+    <string name="setup_my_tv_meather_text" translatable="false">服务器数据同步失败</string>
+    <string name="setup_my_tv_meet_text" translatable="false">开会通知</string>
+    <string name="setup_activity_line_name_text" translatable="false">设置</string>
+    <string name="setup_activity_tv_synchro_text" translatable="false">数据同步</string>
+    <string name="setup_activity_tv_cancel_text" translatable="false">用户注销</string>
+    <string name="setup_activity_tv_fit_text" translatable="false">传感器适配</string>
+    <string name="setup_activity_tv_write_text" translatable="false">NFC标牌读取</string>
+    <string name="setup_activity_tv_setup_text" translatable="false">服务器设置</string>
+    <string name="setup_activity_tv_clear_text" translatable="false">清除数据</string>
+    <string name="setup_activity_tv_about_text" translatable="false">关于</string>
+    <string name="login_toast_error1_text" translatable="false">工牌失效</string>
+    <string name="login_toast_error2_text" translatable="false">密码错误</string>
+    <string name="login_toast_nopsw_text" translatable="false">帐号不能为空</string>
+    <string name="upcom_check_mobject_tvgc_text" translatable="false">观察</string>
+    <string name="upcom_check_mobject_tvcb_text" translatable="false">抄表</string>
+    <string name="upcom_check_mobject_tvzd_text" translatable="false">测振</string>
+    <string name="upcom_check_mobject_tvcw_text" translatable="false">测温</string>
+    <string name="setup_about_line_name_text" translatable="false">关于</string>
+    <string name="upcom_measure_section_text" translatable="false">参考区间: </string>
+    <string name="upcom_measure_toast_connect_text" translatable="false">未连接，无法测值</string>
+    <string name="upcom_check_toast_start_text" translatable="false">未到任务开始时间，无法进行相关检查</string>
+    <string name="upcom_check_toast_data_text" translatable="false">扫描标牌和当前区域不一致，请确认！</string>
+    <string name="upcom_watch_adapter_tv_result_text" translatable="false">上一周期结果： 异常</string>
+    <string name="upcom_measure_toast_bt_text" translatable="false">此任务不采集波形数据</string>
+    <string name="test_vibration_tv_peak_text" translatable="false">峰值：</string>
+    <string name="test_vibration_tv_valid_text" translatable="false">有效值：</string>
+    <string name="test_vibra_tv_peakvalue_text" translatable="false">峰峰值：</string>
+    <string name="upcom_devices_line_name_text" translatable="false">设备选择</string>
+    <string name="upcom_watch_dialog_skip_text" translatable="false">跳过此检查项？</string>
+    <string name="upcom_measure_dialog_tv_text" translatable="false">跳过该振动项？</string>
+    <string name="upcom_meter_dialog_tv_text" translatable="false">跳过该抄表项？</string>
+    <string name="upcom_measure_toast_client_text" translatable="false">连接失败，请确认传感器是否开启！</string>
+    <string name="upcom_measure_progress_text" translatable="false">正在连接，请打开传感器...</string>
+    <string name="test_testhistory_tv_sort_text" translatable="false">删除</string>
+    <string name="setup_bluetooth_bt_connect_text" translatable="false">连接</string>
+    <string name="setup_bluetooth_tv_taskname_text" translatable="false">传感器列表</string>
+    <string name="setup_bluetooth_bt_scaveng_text" translatable="false">扫描</string>
+    <string name="setup_bluetooth_line_name_text" translatable="false">传感器适配</string>
+    <string name="setup_bluetooth_progress_text" translatable="false">正在扫描,请稍后.....</string>
+    <string name="setup_bluetooth_dialog_text" translatable="false">正在连接,请稍后.....</string>
+    <string name="setup_bluetooth_toast_notsensor_text" translatable="false">请选择设备</string>
+    <string name="setup_bluetooth_toast_yessensor_text" translatable="false">已经连接成功</string>
+    <string name="setup_bluetooth_toast_yessignal_text" translatable="false">连接成功,已选择使用</string>
+    <string name="setup_bluetooth_toast_nosignal_text" translatable="false">连接失败</string>
+    <string name="upcom_vibra_tv_temperatrue_text" translatable="false">（测量值）</string>
+    <string name="upcom_vibra_tv_acceleration_text" translatable="false">（峰值）</string>
+    <string name="test_detail_toast_nosize_text" translatable="false">没有采集波形数据</string>
+    <string name="test_vibration_toast_nomac_text" translatable="false">还没有设备，请前往设置</string>
+    <string name="setup_setserver_toast_yesconnect_text" translatable="false">连接成功,已选择使用</string>
+    <string name="setup_setserver_noconnect_text" translatable="false">连接失败</string>
+    <string name="login_bt_skip_text" translatable="false">跳过</string>
+    <string name="setup_setserver_dialog_taskname_text" translatable="false">确定跳过设置服务器？</string>
+    <string name="setup_setserver_tv_ip_text" translatable="false">输入IP地址</string>
+    <string name="test_vibration_dialog_text" translatable="false">开始数据采集，请稍候...</string>
+    <string name="setup_activity_progress_dialog_text" translatable="false">正在同步中，请稍后....</string>
+    <string name="setup_activity_dialog_text" translatable="false">正在清除缓存，请稍候...</string>
+    <string name="setup_activity_toast_nosynchro_text" translatable="false">无法同步，请先登录</string>
+    <string name="setup_activity_toast_synchro_text" translatable="false">同步完成</string>
+    <string name="setup_activity_toast_clear_text" translatable="false">清理完成，已经是最佳了</string>
+    <string name="setup_my_activity_tvscaveng_text" translatable="false">退出登录</string>
+    <string name="setup_bluetooth_toast_fail_text">未扫描到传感器，，请确认传感器是否开启</string>
+    <string name="test_temporary_progress_text">正在保存，请稍后.....</string>
+    <string name="upcom_measure_toast_stop_text">请先停止</string>
+    <string name="upcom_measure_set_retest_text">重测</string>
+    <string name="app_updatemanager_builder_title_text">软件版本更新</string>
+    <string name="app_updatemanager_builder_message_text">有最新的软件包，请下载!</string>
+    <string name="app_updatemanager_builder_positive_text">更新</string>
+    <string name="app_updatemanager_builder_negative_text">以后再说</string>
+    <string name="upcom_watch_toast_over_text">区域时间段已做完</string>
+    <string name="upcom_abnormal_toast_photo_text">最多8张照片</string>
+    <string name="upcom_abnormal_toast_recorder_text">最多一个录像</string>
+    <string name="upcom_abnormal_toast_record_text">最多4个录音</string>
+    <string name="upcom_meter_toast_fail_text">保存失败了</string>
+    <string name="upcom_meter_toast_value_text">请输入仪表值</string>
+    <string name="upcom_meter_activity_tvstanard_text">上次结果：</string>
+    <string name="upcom_meter_activity_tvparmlower_text">标准：</string>
+    <string name="upcom_meter_activity_tvparmupper_text">上次时间：</string>
+    <string name="upcom_taskadapter_tvover_text">已完成</string>
+    <string name="upcom_taskadapter_tvover_text2">进行中</string>
+    <string name="excdelegate_videoshow_toast_over_text">播放完成了</string>
+    <string name="upcom_mediarecorder_toast_record_text">没有录制</string>
+    <string name="app_mybottom_toast_signout_text">双击退出</string>
+    <string name="app_mybottom_item_task_text">任务</string>
+    <string name="app_mybottom_item_test_text">临测</string>
+    <string name="app_mybottom_item_abnormal_text">异常</string>
+    <string name="task_over_abnoradapter_tvcheckitemdesc_text">计划任务：</string>
+    <string name="task_over_abnoradapter_tveststandard_text">判断标准：</string>
+    <string name="task_over_abnoradapter_tvplace_text">检查部位：</string>
+    <string name="setup_bluetooth_tvsignal_text2">良好</string>
+    <string name="setup_bluetooth_tvsignal_text3">中等</string>
+    <string name="setup_bluetooth_tvsignal_text4">弱</string>
+    <string name="setup_bluetooth_tvsignal_text5">极弱</string>
+    <string name="setup_bluetooth_tvquantity_text">90%</string>
+    <string name="setup_bluetooth_tvquantity_text2">83%</string>
+    <string name="setup_bluetooth_tvquantity_text3">65%</string>
+    <string name="setup_bluetooth_tvquantity_text4">45%</string>
+    <string name="setup_bluetooth_tvquantity_text5">20%</string>
+    <string name="setup_bluetooth_tvquantity_text6">5%</string>
+    <string name="upcom_measure_speed_text">(mm/s)</string>
+    <string name="upcom_measure_acceleration_text">(m/s2)</string>
+    <string name="upcom_measure_temperature_text">(ºC)</string>
+    <string name="test_temporary_toast_over_text">保存完成</string>
+    <string name="setup_setserver_toast_empty_text">IP不能为空</string>
+    <string name="setup_setserver_wrongful_text">IP地址不合法,请检查</string>
+    <string name="setup_about_tv_introduce_text">软件介绍：简智达推出的蓝牙振动、温度一体传感器，可作为工业现场测振笔的更新换代，通过蓝牙和手机通讯，可将测量结果通过4G或者WIFI传到云端进行数据保存和分析；同时可以作为移动巡点检的移动伴侣，执行巡点检过程中的测振和测温任务，保证了执行的效率和可靠性。</string>
+    <string name="setup_about_tv_edition_text">版本 V</string>
+    <string name="setup_about_tv_company_text">南京简智达</string>
+    <string name="upcom_measure_tips_text">提示：若无法测值，请手机端关闭蓝牙，重新开启，扫描设备！</string>
+    <string name="app_login_toast_nfc_text">检测到RF标牌</string>
+    <string name="upcom_over_activity_tvtaskname_text">任务详情信息：</string>
+    <string name="tast_snap_toast_noputin_text">没有填写检查结果，不能进行提交操作</string>
+    <string name="setup_bluetooth_adapter_devicename_text">未知设备</string>
+    <string name="upcom_over_frament_title_text">异常项目</string>
+    <string name="upcom_over_frament_title_text2">漏检项目</string>
+    <string name="setup_nfc_textview_text">卡中无数据或数据类型不符！</string>
+    <string name="test_vibra_rb_signal_thermal_text">加速度-温度</string>
+    <string name="test_vibra_rb_signal2_thermal_text">速度-温度</string>
+    <string name="upcom_measure_tv_tips_text">正在连接传感器，请确保传感器开启！</string>
+    <string name="setup_bluetooth_tv_tips_text">未连接,查看传感器是否开启</string>
+    <string name="upcom_watch_activity_toast_allow_text">有观察项没有选择结果，不允许批量提交</string>
+    <string name="app_toos_storage_progress_text">正在上传中.....</string>
+    <string name="app_mybottom_viewpager_title_text">待办任务</string>
+    <string name="app_mybottom_viewpage_title_text2">过期任务</string>
+    <string name="app_mybottom_viewpage_title_text3">自主巡检</string>
+    <string name="setup_nfcdao_toast_nonsupport_text">设备不支持NFC功能</string>
+    <string name="setup_nfcdao_toast_request_text">请打开NFC功能</string>
+    <string name="test_vibration_toast_nostop_text">采集过程中，不能修改参数，请先停止采集！</string>
+    <string name="excdelegate_excquery_toast_noabnor_text">没有更多异常</string>
+    <string name="excdelegate_excquery_dialog_text">正在查询异常....</string>
+    <string name="task_upcom_toast_text">刷新出错，请稍后重试....</string>
+    <string name="upcoming_builder_title_text">上传结果中....</string>
+    <string name="upcoming_upload_text">已上传</string>
+    <string name="upcoming_num_text">条</string>
+    <string name="delegate_exception_dialog_text">正在加载请稍后.....</string>
+    <string name="upcoming_notupload_text">,未上传</string>
+    <string name="testdelegate_progress_text">正在打开设备</string>
+    <string name="dialog_check_tv_poloce_text">报警方式：</string>
+    <string name="dialog_check_tv_limit_text">上下限：</string>
+    <string name="dialog_check_tv_interval_text">任务时段：</string>
+    <string name="dialog_check_tv_next_time_text">下次任务日期：</string>
+    <string name="dialog_check_tv_next_interval_text">下次的任务时段：</string>
+    <string name="dialog_check_tv_result_text">结果值：</string>
+    <string name="dialog_check_tv_close_text">关闭</string>
+    <string name="check_upper_limit_text">超上限</string>
+    <string name="check_lower_limit_text">超下限</string>
+    <string name="check_within_text">窗内</string>
+    <string name="check_external_text">窗外</string>
+    <string name="abnormal_tv_result_text">结果</string>
+    <string name="abnormal_tv_result_hint">请选择结果</string>
+    <string name="abnormal_et_result_hint">请输入结果</string>
+    <string name="abnormal_spinner_simple_text">报警等级</string>
+    <string name="modify">修改</string>
+    <string name="mobject_change_time">已过修改时间</string>
+    <string name="snap_uplabel_toast_text">标牌到位上传失败，无法结束</string>
+    <string name="setup_dialog_text">当前有未上传任务，是否清除</string>
+    <string name="delegate_exception_alarm_text">告警</string>
+    <string name="delegate_exception_halt_text">离线</string>
+    <string name="delegate_exception_more_text">更多</string>
+    <string name="delegate_exception_device_num_text">设备导航</string>
+    <string name="device_details_tv_state_text">状态：</string>
+    <string name="delegate_exception_tv_devicecode_text">设备编码</string>
+    <string name="delegate_exception_tv_company_text">公司</string>
+    <string name="device_detail_no_attention_text">取消收藏</string>
+    <string name="device_detail_yes_attention_text">加入收藏</string>
+    <string name="semicolon">：</string>
+    <string name="default_page_tv_refresh">刷新</string>
+    <string name="default_page_tv_tips_text">无结果</string>
+    <string name="delegate_exception_tv_point_text">测点名称</string>
+    <string name="delegate_excption_update_text">更新时间</string>
+    <string name="test_vibration_rb_signal4_text" translatable="false">位移</string>
+    <string name="app_mybottom_item_excdelegate_text">状态监测</string>
+    <string name="device_detail_now_alarm">阀值告警</string>
+    <string name="device_detail_history_alarm">离线告警</string>
+    <string name="device_details_tv_pl_text">所属机组名称-</string>
+    <string name="device_details_alarm_tv_message_text">信息</string>
+    <string name="device_details_alarm_tv_change_text">离线反馈</string>
+    <string name="device_details_alarm_tv_happen_text">发生</string>
+    <string name="device_details_alarm_tv_noneed_text">原因分析</string>
+    <string name="delegate_more_device_text">设备档案</string>
+    <string name="device_archive_tv_query_text">设备查询</string>
+    <string name="device_archive_basic_information_text">基本信息</string>
+    <string name="device_history_line_name_text">历史趋势</string>
+    <string name="stock_alarm_tv_start_time_text">开始日期</string>
+    <string name="stock_alarm_totime_text">至</string>
+    <string name="stock_alarm_tv_end_time_text">结束日期</string>
+    <string name="more_device_et_search_text">搜索</string>
+    <string name="device_history_signal_text">信号类型</string>
+    <string name="device_history_value_text">最新值</string>
+    <string name="device_history_search_toast">请补全条件</string>
+    <string name="device_history_dialog_time_title">设置日期信息</string>
+    <string name="delegate_exception_sollect_text">我的收藏</string>
+    <string name="more_device_tv_sort_text">设备树</string>
+    <string name="delegate_exception_device_text">设备</string>
+    <string name="remind_list_alarm_tv_unit_text">二级单位</string>
+    <string name="device_choice_tv_query_text">回上一级</string>
+    <string name="device_choice_tv_tips_text">请选择相应设备</string>
+    <string name="device_choice_tv_celect_text">全选</string>
+    <string name="device_list_tv_archive_text">查看档案</string>
+    <string name="device_choice_toast_celect_text">未选中设备</string>
+    <string name="device_spot_line_name_text">测量点历史趋势</string>
+    <string name="device_spot_tv_time_text">时间</string>
+    <string name="device_spot_tv_name_text">测量值</string>
+    <string name="stock_alarm_unit_text">单位</string>
+    <string name="app_toast_task_erro">同步不成功，请重试</string>
+    <string name="upload_success">上传成功!</string>
+    <string name="upload_unsuccessful">上传不成功!</string>
+    <string name="no_data">缺少结果值，无法保存</string>
+</resources>

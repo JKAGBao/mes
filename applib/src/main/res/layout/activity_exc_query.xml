@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.activity.ExcQueryActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/snap_adapter_btabnormal_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:background="@color/upback"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_connect"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/btn_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_count"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/tv_devices"
+                    android:layout_width="46dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/test_temporary_bt_preservation_text"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_abnonrmal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/upback">
+
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_load"
+        android:layout_width="263dp"
+        android:layout_height="162dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@mipmap/ic_nodelegate" />
+</RelativeLayout>

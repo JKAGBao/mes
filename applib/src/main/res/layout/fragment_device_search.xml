@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.fragment.workbench.DeviceSearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_back" />
+
+        <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+            android:id="@+id/line_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxEms="10"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_connect"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+
+        <AutoCompleteTextView
+            android:completionThreshold="1"
+            android:id="@+id/et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/more_device_et_search_text"
+            android:textColor="@color/work_title"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/btn_search" />
+    </LinearLayout>
+
+    <project.bridgetek.com.bridgelib.MyControl.MyListView
+        android:id="@+id/lv_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </project.bridgetek.com.bridgelib.MyControl.MyListView>
+</LinearLayout>

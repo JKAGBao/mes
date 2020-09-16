@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_ll_count"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/login_account_psw">
+
+            <project.bridgetek.com.applib.main.toos.DropEditText
+                android:id="@+id/tv_taskName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入离线原因"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/bt_preservation"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dialog_bt_preservation"
+                android:includeFontPadding="false"
+                android:text="@string/test_temporary_bt_preservation_text"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bt_complete"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dialog_bt_preservation"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_abnormal_tv_cancel_text"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/theme"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_set"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/message"
+                android:id="@+id/ic_set"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_inspect"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/app_bridgelib_tv_inspect_text"
+            android:textColor="#161616"
+            android:textSize="20sp" />
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:paddingLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/img_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle" />
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:background="@drawable/set"
+            android:id="@+id/ic_message"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:gravity="center"
+           android:layout_gravity="center"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:id="@+id/bottom_bar_delegate_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/ll_title" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

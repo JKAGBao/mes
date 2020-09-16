@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_dialog_upload"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/shape_dialog_upload"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_success" />
+
+            <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+                android:id="@+id/tv_upload"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="成功"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+            android:padding="10dp"
+            android:minWidth="300dp"
+            android:id="@+id/tv_taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:includeFontPadding="false"
+            android:text="@string/upcom_watch_dialog_skip_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+
+        <project.bridgetek.com.bridgelib.MyControl.BoldTextView
+            android:padding="10dp"
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:includeFontPadding="false"
+            android:text="@string/upcom_watch_dialog_skip_text"
+            android:textColor="@color/work_title"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/bt_preservation"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:background="@drawable/shape_dialog_button"
+            android:includeFontPadding="false"
+            android:text="@string/test_temporary_bt_preservation_text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

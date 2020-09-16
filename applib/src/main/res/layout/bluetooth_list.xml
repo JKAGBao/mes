@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upback"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_connect"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white">
+
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:shadowColor="@color/select_bt_normal" />
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_toEndOf="@+id/btl_normal"
+            android:text="TEST"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/device_name"
+            android:text="TEST"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+

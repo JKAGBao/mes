@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:context="project.bridgetek.com.applib.main.activity.TemporaryActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_back"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/test_temporary_line_name_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_Mobjectinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_temporary_tv_mobjextinfo_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <EditText
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:background="@null"
+                android:id="@+id/tv_device"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:hint="@string/test_temporary_tv_device_text"
+                android:includeFontPadding="false"
+                android:textColorHint="@color/meter_hint_tv"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_devices"
+                android:layout_width="46dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_abnormal_tv_devices_text"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_signal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_temporary_tv_signal_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_signal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_temporary_rb_input_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_output"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="42dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_temporary_rb_output_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="42dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_temporary_rb_other_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_direction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_temporary_tv_direction_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_direction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_temporary_rb_level_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="54dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_temporary_rb_vertical_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_axial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="54dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_temporary_rb_axial_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_temporary_tv_remarks_text"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_additional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="@string/test_temporary_et_additional_text"
+                android:includeFontPadding="false"
+                android:textColor="@color/meter_hint_tv"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_preservation"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@color/theme"
+            android:includeFontPadding="false"
+            android:text="@string/test_temporary_bt_preservation_text"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_retest"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@color/measure_bt_preservation"
+            android:includeFontPadding="false"
+            android:text="@string/test_temporary_bt_retest_text"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

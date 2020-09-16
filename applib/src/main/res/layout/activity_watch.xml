@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.bridgetek.com.applib.main.activity.WatchActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/task_upcoming_tv_workname_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/st_derail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:checked="true"
+            android:switchMinWidth="46dp"
+            android:thumb="@drawable/switch_custom_thumb_selector"
+            android:track="@drawable/switch_custom_track_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/upback"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="16dp"
+                android:text="@string/task_upcoming_tv_workname_text"
+                android:textColor="@color/work_title"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_state"
+                android:src="@drawable/ic_control"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_watch"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@color/theme"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/snap_refer_bt_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/right_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="58dp"
+            android:alpha="0.6"
+            android:src="@mipmap/btn_topping"
+            app:elevation="2dp"
+            app:fab_colorNormal="@color/theme"
+            app:fab_type="mini" />
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/left_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="58dp"
+            android:alpha="0.6"
+            android:src="@mipmap/btn_turn_on_the_flashlight"
+            app:elevation="2dp"
+            app:fab_type="mini" />
+    </FrameLayout>
+
+</RelativeLayout>

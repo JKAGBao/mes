@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_abnormal"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/tv_abnormal"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:scaleX="1"
+                android:scaleY="1" />
+
+            <TextView
+                android:id="@+id/tv_User"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/excdelegate_frament_adapter_tv_user_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_refer"
+                android:layout_width="10dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_corner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/excdelegate_dapter_line">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_name" />
+
+            <TextView
+                android:id="@+id/tv_inspect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_fragment_adapter_tv_inspect_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_types_of" />
+
+            <TextView
+                android:id="@+id/tv_vibration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_history_adapter_tv_vibration_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_axial" />
+
+            <TextView
+                android:id="@+id/tv_MObjectStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/test_history_adapter_tv_mobject_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_complete_time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_fragment_adapter_tv_time_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/test_history_adapter_tv_remark_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/excdelegate_fragment_adapter_tv_message_text"
+                android:textColor="@color/percentage"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_collect"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_carry_out_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_count"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="84dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/shape_test_corner"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_types_of" />
+
+            <TextView
+                android:id="@+id/tv_abnormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_history_adapter_tv_abnormal_text"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

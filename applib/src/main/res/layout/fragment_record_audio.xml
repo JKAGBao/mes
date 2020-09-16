@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/record_audio_cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:transitionName="open_mediaplayer"
+    card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_touming"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/upback"
+        android:orientation="vertical"
+        android:paddingBottom="48dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp">
+
+        <Button
+            android:id="@+id/record_audio_iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/theme"
+            android:text="@string/over_undete_btcomplete_text" />
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/record_audio_fab_record"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/record_audio_chronometer_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_mic_white_36dp"
+            card_view:fab_colorNormal="@color/theme" />
+
+        <Chronometer
+            android:id="@+id/record_audio_chronometer_time"
+            android:layout_width="240dp"
+            android:layout_height="84dp"
+            android:layout_below="@+id/record_audio_iv_close"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textSize="60sp" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="24dp"
+            android:layout_alignRight="@+id/record_audio_chronometer_time"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/upcom_abnormal_record_tv_time_text" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
