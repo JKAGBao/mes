@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+    <RelativeLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:src="@drawable/leftarrow" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="系数配置"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_gain"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_vibra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:includeFontPadding="false"
+            android:text="振动数据："
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_semaphore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_vibra_rb_signal_thermal_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_analyse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_vibration_rb_analyse5_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_sampling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:includeFontPadding="false"
+            android:text="@string/test_vibration_tv_sampling_text"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:text="点"
+            android:textColor="@color/work_title"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_signal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_vibration_tv_signal_text_text"
+                android:textColor="@color/work_title"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_signal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_signal1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibra_rb_signal_thermal_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_signal2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibra_rb_signal2_thermal_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_signal3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_signal3_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_analyse_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_vibration_tv_analyse_text_text"
+                android:textColor="@color/work_title"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_analyse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_analyse1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_analyse1_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_analyse2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_analyse2_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_analyse3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:checked="true"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_analyse5_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_analyse4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_analyse3_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_analyse5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_analyse4_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sampling_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:includeFontPadding="false"
+                android:text="@string/test_vibration_tv_sampling_text_text"
+                android:textColor="@color/work_title"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_sampling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sampling1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_sampling1"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sampling2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:gravity="center"
+                        android:checked="true"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_sampling2_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sampling3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_sampling3_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sampling4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_sampling4"
+                        android:textColor="@color/percentage"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

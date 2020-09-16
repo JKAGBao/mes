@@ -34,13 +34,13 @@
             android:text="正在加载...."/>
     </LinearLayout>
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </android.support.v4.widget.SwipeRefreshLayout>
-    <android.support.v7.widget.RecyclerView
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_all"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

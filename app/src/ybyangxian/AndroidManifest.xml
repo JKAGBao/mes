@@ -17,7 +17,7 @@
         android:sharedUserId="android.uid.system"
         >
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             tools:replace="android:authorities"
             android:authorities="${applicationId}.provider"
             android:exported="false"
@@ -124,5 +124,8 @@
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
     <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <!--蓝牙-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
 </manifest>

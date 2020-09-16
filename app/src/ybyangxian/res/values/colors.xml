@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- #024F9  #1D2089 0099ff #4682B4 #009ACD #4A708B #00688B-104E8B #7171C6-->
+    <color name="colorPrimary">#1262B3</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorPriamryOne">#F8F8FF</color>
+    <color name="colorPriamryTwo">#F7F7F7</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--图片轮播指示点颜色 -->
+    <color name="colorWhite">#fff</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+    <color name="grey">#EDEDED</color><!--红色 -->
+    <color name="greyc">#CCCCCC</color><!--红色 -->
+    <color name="wgrey">#d9d6c3</color><!--红色 -->
+</resources>

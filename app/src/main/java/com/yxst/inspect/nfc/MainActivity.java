@@ -10,11 +10,13 @@ import android.graphics.Paint;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+
 import com.kaopiz.kprogresshud.KProgressHUD;
 import com.nfc.rts.androidaar.Interface;
 import com.nfc.rts.androidaar.VibUtils;
@@ -374,7 +376,6 @@ public class MainActivity extends BaseActivity implements Interface {
        数据初始化
         */
     private void titleInit(){
-
         recorddao = DatabaseManager.getInstance().getRecordDao();
         itemdao = DatabaseManager.getInstance().getItemDao();
     }

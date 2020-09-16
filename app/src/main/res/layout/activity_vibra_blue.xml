@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upback"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/rl_cont"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/test_vibration_line_name_text"
+            android:textColor="@color/title_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_peak_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/test_vibration_tv_peak_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_virtual_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/test_vibration_tv_valid_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_peak_peak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/test_vibra_tv_peakvalue_text"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_connect"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_sensor" />
+
+                <TextView
+                    android:id="@+id/tv_notConnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_notconnect_text"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_Connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="14dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_connect_text"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/btn_right_arrow_yellow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/ic_sensor_green_normal" />
+
+                <TextView
+                    android:id="@+id/tv_sensor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/excdelegate_fragment_adapter_tv_inspect_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/ic_signal" />
+
+                <TextView
+                    android:id="@+id/tv_signal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_signal_text"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/ic_electricity" />
+
+                <TextView
+                    android:id="@+id/tv_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:includeFontPadding="false"
+                    android:text="@string/upcom_measure_tv_quantity"
+                    android:textColor="@color/work_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/btn_common_right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_gain"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_vibra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:includeFontPadding="false"
+                        android:text="振动数据："
+                        android:textColor="@color/work_title"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_semaphore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibra_rb_signal_thermal_text"
+                        android:textColor="@color/work_title"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_analyse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_rb_analyse5_text"
+                        android:textColor="@color/work_title"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sampling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14dp"
+                        android:layout_weight="1"
+                        android:includeFontPadding="false"
+                        android:text="@string/test_vibration_tv_sampling_text"
+                        android:textColor="@color/work_title"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_gain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/btn_down_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_signal_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="16dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/test_vibration_tv_signal_text_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioGroup
+                                android:id="@+id/rg_signal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rb_signal1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibra_rb_signal_thermal_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_signal2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibra_rb_signal2_thermal_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_signal3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_signal3_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_analyse_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="16dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/test_vibration_tv_analyse_text_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioGroup
+                                android:id="@+id/rg_analyse"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rb_analyse1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_analyse1_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_analyse2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_analyse2_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_analyse5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:checked="true"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_analyse5_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_analyse3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_analyse3_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_analyse4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_analyse4_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_sampling_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="16dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/test_vibration_tv_sampling_text_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioGroup
+                                android:id="@+id/rg_sampling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rb_sampling1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_sampling1"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_sampling2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:gravity="center"
+                                    android:checked="true"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_sampling2_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_sampling3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_sampling3_text"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_sampling4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/test_vibration_rb_sampling4"
+                                    android:textColor="@color/percentage"
+                                    android:textSize="14sp" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_acceleration"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp">
+
+                        <TextView
+                            android:id="@+id/tv_acceleration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="@string/test_vibration_rb_signal1_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/upcom_measure_acceleration_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_acceleration_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_measure_tv_acceleration_value_text"
+                        android:textColor="@color/work_title"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/tv_acceleration_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="12dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_vibra_tv_acceleration_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/bt_acceleration_photo"
+                        android:layout_width="74dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:background="@color/select_bt_normal"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_measure_bt_speed_text"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_speed"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp">
+
+                        <TextView
+                            android:id="@+id/tv_speed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="@string/test_vibration_rb_signal2_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/upcom_measure_speed_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_speed_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_measure_tv_acceleration_value_text"
+                        android:textColor="@color/work_title"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/tv_speed_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="12dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_measure_tv_speed_text_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/bt_speed_photo"
+                        android:layout_width="74dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:background="@color/select_bt_normal"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_measure_bt_speed_text"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <TextView
+                            android:id="@+id/tv_temperature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="@string/test_vibration_rb_signal3_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/upcom_measure_temperature_text"
+                            android:textColor="@color/work_title"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_temperature_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_measure_tv_acceleration_value_text"
+                        android:textColor="@color/work_title"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/tv_temperature_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="12dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_vibra_tv_temperatrue_text"
+                        android:textColor="@color/percentage"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/bt_temperature_photo"
+                        android:layout_width="74dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:background="@color/select_bt_normal"
+                        android:includeFontPadding="false"
+                        android:text="@string/upcom_measure_bt_temperature_text"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/over_tips"
+            android:textSize="10sp"
+            android:text="@string/upcom_measure_tips_text"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_preservation"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@color/measure_bt_preservation"
+                android:includeFontPadding="false"
+                android:text="@string/over_undete_btcomplete_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_retest"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/theme"
+                android:includeFontPadding="false"
+                android:text="@string/upcom_measure_bt_retest_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

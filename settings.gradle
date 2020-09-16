@@ -1,1 +1,4 @@
+include ':thermal'
+include ':bridgelib'
+include ':applib'
 include ':app', ':VibUtils'

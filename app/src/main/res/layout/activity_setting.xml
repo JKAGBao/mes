@@ -60,12 +60,133 @@
             />
     </RelativeLayout>
     <LinearLayout
+        android:id="@+id/ll_bluevib"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_vib"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/bluevib32"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center_vertical"
+            android:text="蓝牙巡检仪"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+       <Switch
+           android:id="@+id/st_blue"
+           android:layout_width="50dp"
+           android:layout_height="30dp"
+           android:switchMinWidth="40dp"
+           android:layout_marginRight="5dp"
+           />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_severip"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_ip"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/serve"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center_vertical"
+            android:text="服务器 IP"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginRight="13dp"
+            android:gravity="right"
+            android:text=""
+            />
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center|right"
+            android:foregroundGravity="center_vertical"
+            android:src="@drawable/right"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_imagepath"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_imagepath"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ip48"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center_vertical"
+            android:text="图片路径"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_imagepath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginRight="3dp"
+            android:gravity="right"
+            android:text=""
+            android:singleLine="true"
+            />
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center|right"
+            android:foregroundGravity="center_vertical"
+            android:src="@drawable/right"
+            />
+    </LinearLayout>
+    <LinearLayout
         android:id="@+id/ll_identify"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:padding="12dp"
         android:background="@color/white"
         android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
@@ -78,9 +199,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginLeft="15dp"
-            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
             android:text="识别RF卡"
+            android:layout_gravity="center_vertical"
             android:textColor="@color/black"
             android:textSize="16sp" />
         <ImageView
@@ -91,7 +212,6 @@
             android:src="@drawable/right"
             />
     </LinearLayout>
-
 
 
 </LinearLayout>

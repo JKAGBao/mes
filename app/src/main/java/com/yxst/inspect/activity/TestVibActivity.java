@@ -10,11 +10,12 @@ import android.graphics.Paint;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 
 import com.kaopiz.kprogresshud.KProgressHUD;
 import com.nfc.rts.androidaar.Interface;
@@ -23,21 +24,12 @@ import com.yxst.inspect.ConfigInfo;
 import com.yxst.inspect.MyApplication;
 import com.yxst.inspect.R;
 import com.yxst.inspect.database.DatabaseManager;
-import com.yxst.inspect.database.Manager.InspectDevicQueryUtil;
 import com.yxst.inspect.database.Manager.ItemQueryUtil;
-import com.yxst.inspect.database.Manager.RecordQueryUtil;
-import com.yxst.inspect.database.dao.GradeDao;
 import com.yxst.inspect.database.dao.ItemDao;
 import com.yxst.inspect.database.dao.RecordDao;
-import com.yxst.inspect.database.model.Grade;
-import com.yxst.inspect.database.model.InspectDevice;
 import com.yxst.inspect.database.model.Item;
 import com.yxst.inspect.database.model.Record;
-import com.yxst.inspect.nfc.ObservedActivity;
 import com.yxst.inspect.nfc.vib.WifiAPManager;
-import com.yxst.inspect.rx.manager.RecordManager;
-import com.yxst.inspect.util.SharedPreferenceUtil;
-import com.yxst.inspect.util.TimeUtil;
 
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
@@ -50,9 +42,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 
 public class TestVibActivity extends BaseActivity implements Interface {

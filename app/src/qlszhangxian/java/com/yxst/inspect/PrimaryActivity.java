@@ -7,12 +7,13 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.yxst.inspect.activity.FinishActivity;
 import com.yxst.inspect.activity.InspectActivity;
@@ -25,6 +26,7 @@ import com.yxst.inspect.activity.SignInActivity;
 import com.yxst.inspect.activity.TestVibActivity;
 import com.yxst.inspect.activity.UnLubeActivity;
 import com.yxst.inspect.activity.UndetectActivity;
+import com.yxst.inspect.activity.VibraBlueActivity;
 import com.yxst.inspect.activity.adapter.DividerGridItemDecoration;
 import com.yxst.inspect.activity.adapter.PrimaryRvAdapter;
 import com.yxst.inspect.broadcast.NetworkChangeReceiver;
@@ -65,13 +67,15 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
+import project.bridgetek.com.applib.main.activity.VibraTionActivity;
 
 /*
 主界面
  */
 public class PrimaryActivity extends AppCompatActivity implements PrimaryRvAdapter.OnItemClickListener {
 
-    @BindView(R.id.rv_item) RecyclerView rvItem;
+    @BindView(R.id.rv_item)
+    RecyclerView rvItem;
     private Long userId;
     private IntentFilter intentFilter;
     private NetworkChangeReceiver networkChangeReceiver;
@@ -80,6 +84,7 @@ public class PrimaryActivity extends AppCompatActivity implements PrimaryRvAdapt
             super.onCreate(savedInstanceState);
              TitleBarUtil.titlebarSetting(this);
             setContentView(R.layout.activity_primary);
+            rvItem = findViewById(R.id.rv_item);
             ButterKnife.bind(this);
             userId = SharedPreferenceUtil.getId(this,"User");
             PrimaryRvAdapter mAdapter = new PrimaryRvAdapter(ConfigInfo.getInstance().ITEMS_PRIMARY,this);
@@ -95,7 +100,9 @@ public class PrimaryActivity extends AppCompatActivity implements PrimaryRvAdapt
                     int REQUEST_EXTERNAL_STORAGE = 1;
                     String[] PERMISSIONS_STORAGE = {
                             Manifest.permission.READ_EXTERNAL_STORAGE,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                            Manifest.permission.ACCESS_FINE_LOCATION,
+                            Manifest.permission.BLUETOOTH
                     };
                     int permission = ActivityCompat.checkSelfPermission(PrimaryActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
@@ -278,6 +285,12 @@ public class PrimaryActivity extends AppCompatActivity implements PrimaryRvAdapt
 
                 Intent setting = new Intent(PrimaryActivity.this,SettingActivity.class);
                 startActivity(setting);
+                break;
+            case ConfigInfo.BLUE://设置
+
+                Intent blue = new Intent(PrimaryActivity.this, VibraTionActivity.class);
+//                Intent blue = new Intent(PrimaryActivity.this, VibraBlueActivity.class);
+                startActivity(blue);
                 break;
             case 20:
                 Intent aintent = new Intent(PrimaryActivity.this,ScheduleActivity.class);
